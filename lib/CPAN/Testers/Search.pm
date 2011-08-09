@@ -17,11 +17,11 @@ CPAN::Testers::Search - Interface to search CPAN Testers.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 Readonly my $URL => 'http://stats.cpantesters.org/cpanmail.html';
 
 =head1 DESCRIPTION
@@ -58,18 +58,18 @@ the CPAN Testers Reports site. For example,
 
 Here 7019327 is the ID and 07019335-b19f-3f77-b713-d32bba55d77f is the GUID.
 
-	use strict; use warnings;
-	use CPAN::Testers::Search;
+    use strict; use warnings;
+    use CPAN::Testers::Search;
 
-	my $tester = CPAN::Testers::Search->new();
-	
-	print $tester->search('7019327') . "\n";
-	# or
-	print $tester->search('07019335-b19f-3f77-b713-d32bba55d77f') . "\n";
-	# or
-	print $tester->search(id => '7019327') . "\n";
-	# or
-	print $tester->search(guid => '07019335-b19f-3f77-b713-d32bba55d77f') . "\n";
+    my $tester = CPAN::Testers::Search->new();
+    
+    print $tester->search('7019327') . "\n";
+    # or
+    print $tester->search('07019335-b19f-3f77-b713-d32bba55d77f') . "\n";
+    # or
+    print $tester->search(id => '7019327') . "\n";
+    # or
+    print $tester->search(guid => '07019335-b19f-3f77-b713-d32bba55d77f') . "\n";
 
 =cut
 

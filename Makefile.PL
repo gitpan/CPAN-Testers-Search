@@ -10,7 +10,7 @@ WriteMakefile(
     clean         => { FILES => 'CPAN-Testers-Search-*' },
     PREREQ_PM     => {
         'Test::More'  => 0,
-        'Readonly'    => 0,
+        'Readonly'    => '1.03',
         'Moose'       => '2.0006',
         'WWW::Mechanize'   => '1.60',
         'namespace::clean' => '0.20',

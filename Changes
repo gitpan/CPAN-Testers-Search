@@ -1,4 +1,8 @@
 Revision history for CPAN-Testers-Search
 
+0.02    Tue Aug 09 16:02:11 2011
+        - Made Readonly v1.03 as minimum requirement.
+        - Prepared the distribution using the Module::Signature v0.68.
+
 0.01    Thu Jul 21 10:13:01 2011
         - First version released.
